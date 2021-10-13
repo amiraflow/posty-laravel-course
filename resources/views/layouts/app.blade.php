@@ -35,7 +35,7 @@
           <a class="nav-link" href="#">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+          <a class="nav-link" href="{{route('register')}}">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Logout</a>
@@ -47,18 +47,11 @@
 
 
     <div class="container">
-  <div class="row">
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
+  
     @yield('content')
-    </div>
-    <div class="col">
-      Column
-    </div>
+    
   </div>
-</div>
+
         
     </body>
 </html>
