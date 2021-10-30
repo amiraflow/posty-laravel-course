@@ -7,7 +7,7 @@
 @csrf
 <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Name" value= "{{ old('name') }}">
     @error('name')
     
     {{ $message }}
@@ -19,7 +19,7 @@
   </div>
   <div class="form-group">
     <label for="username">Username</label>
-    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value= "{{ old('username') }}">
 
     @error('username')
     
@@ -30,7 +30,7 @@
 
 <div class="form-group">
     <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email">
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email" value= "{{ old('email') }}">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
     @error('email')
